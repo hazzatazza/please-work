@@ -76,10 +76,21 @@ const App: React.FC = () => {
         </main>
 
         {/* Footer */}
-        <footer className="bg-slate-900 border-t border-slate-800 py-6 px-6">
+        <footer className="bg-slate-900 border-t border-slate-800 py-8 px-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
-            <p>&copy; 2025 Algebra Practice</p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
+            <div className="flex flex-col md:flex-row md:items-center md:space-x-6 mb-4 md:mb-0">
+              <p>&copy; 2026 Algebra Practice</p>
+              <a 
+                href="https://sites.google.com/view/unblocked-six-seven" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-indigo-400 hover:text-indigo-300 transition-colors font-bold flex items-center space-x-2 mt-2 md:mt-0"
+              >
+                <i className="fab fa-google"></i>
+                <span>The OG Google Site</span>
+              </a>
+            </div>
+            <div className="flex space-x-6">
               <Link to="/about" className="hover:text-white transition-colors">About</Link>
               <a href="#" className="hover:text-white transition-colors">Privacy</a>
               <a href="#" className="hover:text-white transition-colors">Terms</a>

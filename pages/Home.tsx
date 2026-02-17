@@ -76,7 +76,15 @@ const INITIAL_LIBRARY: Game[] = [
     title: 'Crossy Road',
     description: 'Why did the chicken cross the road? Find out in this endless arcade hopper.',
     thumbnail: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?q=80&w=400&h=225&auto=format&fit=crop',
-    url: 'https://raw.githack.com/ubg98/CrossyRoad/gh-pages/index.html',
+    url: 'https://raw.githack.com/hazzatazza/youtube-playables/main/crossy-road/index.html',
+    isCustom: false
+  },
+  {
+    id: 'wheelie-bike',
+    title: 'Wheelie Bike',
+    description: 'Keep the front wheel off the ground for as long as possible in this challenging bike balance game.',
+    thumbnail: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=400&h=225&auto=format&fit=crop',
+    embedCode: '<iframe src="https://wheeliebike-9l9.pages.dev/" sandbox="allow-scripts allow-same-origin allow-forms" style="width:100%; height:100%; border:none;"></iframe>',
     isCustom: false
   },
   {

@@ -10,13 +10,13 @@ const About: React.FC = () => {
       <h2 className="text-5xl font-black text-white mb-6">About</h2>
       <div className="space-y-8 text-slate-300 text-lg leading-relaxed">
         <div className="p-8 bg-slate-800/50 rounded-3xl border border-slate-700 shadow-xl">
-          <p className="font-medium text-white text-2xl mb-2">created by hazza 2025</p>
+          <p className="font-medium text-white text-2xl mb-2">created by hazza 2026</p>
           <div className="h-px bg-slate-700 w-full my-4"></div>
           <p className="text-indigo-400 font-bold tracking-widest uppercase text-sm">Algebra Practice &copy;</p>
         </div>
         
         <p className="text-slate-400 italic">
-          "then i dont even know how to make this stuff ai did it for me hope it works at school"
+          "i dont even know how to make this stuff ai did it for me hope it works at school"
         </p>
 
         <div className="pt-12 text-left bg-slate-900 p-8 rounded-3xl border border-indigo-500/20">
