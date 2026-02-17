@@ -38,9 +38,13 @@ const App: React.FC = () => {
         {/* Header */}
         <header className="bg-slate-900 border-b border-slate-800 py-4 px-6 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto flex justify-between items-center">
-            <Link to="/" className="flex items-center space-x-2 group">
-              <div className="bg-indigo-600 p-2 rounded-lg group-hover:bg-indigo-500 transition-colors">
-                <i className="fas fa-calculator text-white"></i>
+            <Link to="/" className="flex items-center space-x-3 group">
+              <div className="w-10 h-10 overflow-hidden rounded-lg bg-slate-800 flex items-center justify-center p-1 group-hover:scale-110 transition-transform">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/01/El_Sato_Tux_The_penguin_in_sonic_style.png" 
+                  alt="Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <h1 className="text-2xl font-bold tracking-tight text-white">
                 Algebra <span className="text-indigo-400">Practice</span>
