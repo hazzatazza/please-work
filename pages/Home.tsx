@@ -55,6 +55,54 @@ const INITIAL_LIBRARY: Game[] = [
     isCustom: false
   },
   {
+    id: 'tunnel-rush',
+    title: 'Tunnel Rush',
+    description: 'Test your reflexes in this fast-paced 3D tunnel runner. Speed through obstacles and stay focused!',
+    thumbnail: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/3kh0-assets/fixy/tunnel-rush/index.html',
+    isCustom: false
+  },
+  {
+    id: 'tiny-fishing',
+    title: 'Tiny Fishing',
+    description: 'Catch rare fish and upgrade your equipment in this relaxing fishing simulator. How deep can you go?',
+    thumbnail: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/3kh0-assets/fixy/tiny-fishing/index.html',
+    isCustom: false
+  },
+  {
+    id: 'wordle',
+    title: 'Wordle',
+    description: 'Guess the hidden word in 6 tries. A daily logic and vocabulary challenge with infinite play mode.',
+    thumbnail: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/3kh0-assets/fixy/wordle/index.html#infinite',
+    isCustom: false
+  },
+  {
+    id: 'basket-random',
+    title: 'Basket Random',
+    description: 'Funny and chaotic physics-based basketball. Score points with unpredictable movements and wacky players!',
+    thumbnail: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/gjhacked/basket-random/main/index.html',
+    isCustom: false
+  },
+  {
+    id: 'powerline-io',
+    title: 'Powerline.io',
+    description: 'Grow your neon snake by consuming energy and outmaneuvering rivals in this fast-paced multiplayer arena.',
+    thumbnail: 'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://powerline.coolmathgames.com/',
+    isCustom: false
+  },
+  {
+    id: 'rocketgoal-io',
+    title: 'Rocketgoal.io',
+    description: 'Intense vehicular soccer action! Drive, boost, and score against opponents in this high-energy sports game.',
+    thumbnail: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/will-k16/rocketgoal/main/rocketgoal.io/index.html',
+    isCustom: false
+  },
+  {
     id: 'short-life',
     title: 'Short Life',
     description: 'Survive a series of deadly obstacles in this unique physics-based platformer.',
