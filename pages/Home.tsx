@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import GameCard from '../components/GameCard';
 import GameModal from '../components/GameModal';
@@ -85,6 +84,30 @@ const INITIAL_LIBRARY: Game[] = [
     description: 'Keep the front wheel off the ground for as long as possible in this challenging bike balance game.',
     thumbnail: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=400&h=225&auto=format&fit=crop',
     embedCode: '<iframe src="https://wheeliebike-9l9.pages.dev/" sandbox="allow-scripts allow-same-origin allow-forms" style="width:100%; height:100%; border:none;"></iframe>',
+    isCustom: false
+  },
+  {
+    id: 'bouncemasters',
+    title: 'Bouncemasters',
+    description: 'Bounce the penguin as far as you can in this fun and addictive action game.',
+    thumbnail: 'https://images.unsplash.com/photo-1517030330234-94c4fa948ebc?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/youtube-playables/main/bouncemasters/index.html',
+    isCustom: false
+  },
+  {
+    id: 'jetpack-joyride',
+    title: 'Jetpack Joyride',
+    description: 'Bullet-powered jetpacks! Giant mechanical dragons! Birds that shoot money! Suit up with the coolest jetpacks ever made.',
+    thumbnail: 'https://images.unsplash.com/photo-1614728263952-84ea206f99b6?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/genizy/ugs-files/main/cljetpackjoyride.html',
+    isCustom: false
+  },
+  {
+    id: 'escape-road',
+    title: 'Escape Road',
+    description: 'Outrun the police in this high-speed car chase survival game. Drive fast and don\'t get caught!',
+    thumbnail: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/genizy/ugs-files/main/clescaperoad.html',
     isCustom: false
   },
   {
@@ -176,7 +199,9 @@ const Home: React.FC<HomeProps> = ({ customGames, onAddGame, onDeleteGame, onRes
       {/* Hero / Controls */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 space-y-6 md:space-y-0">
         <div>
-          <h2 className="text-4xl font-extrabold text-white mb-2">Game Library</h2>
+          <h2 className="text-4xl font-extrabold text-white mb-2 flex items-center">
+            Game Library
+          </h2>
           <p className="text-slate-400">Your personal space for practice and entertainment.</p>
         </div>
         
