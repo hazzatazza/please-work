@@ -34,11 +34,23 @@ const About: React.FC = () => {
               <span className="text-indigo-500 mr-3 mt-1"><i className="fas fa-check-circle"></i></span>
               <span><strong>Backup System:</strong> Download your custom library as a JSON file and restore it on any device.</span>
             </li>
-            <li className="flex items-start">
-              <span className="text-indigo-500 mr-3 mt-1"><i className="fas fa-check-circle"></i></span>
-              <span><strong>High Performance:</strong> Optimized fullscreen viewing and responsive design for all screen sizes.</span>
-            </li>
           </ul>
+        </div>
+
+        {/* New deployment help section */}
+        <div className="pt-12 text-left bg-indigo-900/20 p-8 rounded-3xl border border-indigo-500/30">
+          <h3 className="text-white font-bold text-xl mb-2">Deployment Guide</h3>
+          <p className="text-sm text-slate-400 mb-4">If you see a blank screen on GitHub, it's not an API key problem! It's just a hosting setting.</p>
+          <div className="space-y-4">
+            <div className="bg-slate-900/50 p-4 rounded-xl">
+              <p className="text-indigo-400 font-bold text-sm uppercase mb-1">The Simple Way (Recommended)</p>
+              <p className="text-sm">Use <strong>Vercel.com</strong> or <strong>Netlify.com</strong>. Connect your GitHub and click "Deploy". They handle the complicated build stuff automatically.</p>
+            </div>
+            <div className="bg-slate-900/50 p-4 rounded-xl">
+              <p className="text-indigo-400 font-bold text-sm uppercase mb-1">The "API Key" Mystery</p>
+              <p className="text-sm">You don't need one! This site uses standard web tools (iframes) to show games. You only need a Gemini key if you were making an AI chatbot.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
