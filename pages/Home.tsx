@@ -7,6 +7,38 @@ import { Game } from '../types';
 // Updated library with the latest requested games and thumbnails
 const INITIAL_LIBRARY: Game[] = [
   {
+    id: 'subway-surfers',
+    title: 'Subway Surfers',
+    description: 'Dash as fast as you can! Dodge the oncoming trains and help Jake escape the grumpy Inspector.',
+    thumbnail: 'https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/3kh0-assets/fixy/subway-surfers/index.html',
+    isCustom: false
+  },
+  {
+    id: '3dash',
+    title: '3Dash',
+    description: 'A unique 3D rhythm-based platformer. Jump and fly through geometry in a three-dimensional world.',
+    thumbnail: 'https://images.unsplash.com/photo-1614728263952-84ea206f99b6?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/ugs-singlefile/main/UGS-Files/cl3dasheditor.html',
+    isCustom: false
+  },
+  {
+    id: 'eaglercraft',
+    title: 'Eaglercraft (Minecraft)',
+    description: 'Classic block-building sandbox experience. Explore, build, and survive in Minecraft 1.12.2.',
+    thumbnail: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/XxFluffyAsherxX/Eaglercraft-1.12.2/main/Web/index.html',
+    isCustom: false
+  },
+  {
+    id: 'paper-io-2',
+    title: 'Paper IO 2',
+    description: 'Conquer as much territory as possible. Draw loops to capture land, but watch your tail!',
+    thumbnail: 'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/ubg17/PaperIO2/gh-pages/index.html',
+    isCustom: false
+  },
+  {
     id: 'bitlife',
     title: 'BitLife',
     description: 'How will you live your BitLife? Will you make all the right choices in an attempt to become a model citizen?',
@@ -27,7 +59,7 @@ const INITIAL_LIBRARY: Game[] = [
     title: 'Level Devil',
     description: 'A platformer that tries to trick you at every turn. Expect the unexpected!',
     thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQHbBLx9jLLpJS0RkLK5SdMHS7xtHH9jxOLw&s',
-    url: 'https://gnhustgames.org/leveldevil-source/',
+    url: 'https://raw.githack.com/hazzatazza/level-devil/master/index.html',
     isCustom: false
   },
   {
