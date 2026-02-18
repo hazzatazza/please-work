@@ -4,13 +4,13 @@ import GameModal from '../components/GameModal';
 import CustomGameForm from '../components/CustomGameForm';
 import { Game } from '../types';
 
-// Updated library with the latest requested games
+// Updated library with the latest requested games and thumbnails
 const INITIAL_LIBRARY: Game[] = [
   {
     id: 'bitlife',
     title: 'BitLife',
     description: 'How will you live your BitLife? Will you make all the right choices in an attempt to become a model citizen?',
-    thumbnail: 'https://images.unsplash.com/photo-1516245834210-c4c142787335?q=80&w=400&h=225&auto=format&fit=crop',
+    thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzPoDAVibpJoEiTm1oiu2WBPXbMwcDaXLlw&s',
     url: 'https://raw.githack.com/hazzatazza/bitlife/main/index.html',
     isCustom: false
   },
@@ -26,7 +26,7 @@ const INITIAL_LIBRARY: Game[] = [
     id: 'level-devil',
     title: 'Level Devil',
     description: 'A platformer that tries to trick you at every turn. Expect the unexpected!',
-    thumbnail: 'https://images.unsplash.com/photo-1550745165-9bc0b252728f?q=80&w=400&h=225&auto=format&fit=crop',
+    thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQHbBLx9jLLpJS0RkLK5SdMHS7xtHH9jxOLw&s',
     url: 'https://gnhustgames.org/leveldevil-source/',
     isCustom: false
   },
@@ -34,7 +34,7 @@ const INITIAL_LIBRARY: Game[] = [
     id: 'flappy-bird',
     title: 'Flappy Bird',
     description: 'Navigate through the pipes and try to beat your high score in this addictive classic.',
-    thumbnail: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=400&h=225&auto=format&fit=crop',
+    thumbnail: 'https://archive.org/download/com.dotgears.flappybird/icon.jpg',
     url: 'https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/a15aec72/index.html',
     isCustom: false
   },
@@ -42,7 +42,7 @@ const INITIAL_LIBRARY: Game[] = [
     id: 'cookie-clicker',
     title: 'Cookie Clicker',
     description: 'Bake endless cookies and upgrade your production in the ultimate clicking game.',
-    thumbnail: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=400&h=225&auto=format&fit=crop',
+    thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiEvJAum3u_ifqBOYoS0wgYwZYiA9nsBhI9Q&s',
     url: 'https://cookieclickeralgebra.pages.dev',
     isCustom: false
   },
@@ -50,7 +50,7 @@ const INITIAL_LIBRARY: Game[] = [
     id: 'geometry-dash-lite',
     title: 'Geometry Dash Lite',
     description: 'Jump, fly and flip your way through dangerous passages and spiky obstacles.',
-    thumbnail: 'https://images.unsplash.com/photo-1614294149010-950b698f72c0?q=80&w=400&h=225&auto=format&fit=crop',
+    thumbnail: 'https://cdn.aptoide.com/imgs/e/6/c/e6cff1f59365aeec06a96b943f9eb3c1_fgraphic.png',
     url: 'https://raw.githack.com/threekho/gdl/main/index.html',
     isCustom: false
   },
@@ -58,7 +58,7 @@ const INITIAL_LIBRARY: Game[] = [
     id: 'tunnel-rush',
     title: 'Tunnel Rush',
     description: 'Test your reflexes in this fast-paced 3D tunnel runner. Speed through obstacles and stay focused!',
-    thumbnail: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400&h=225&auto=format&fit=crop',
+    thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13q6aHn1f3Dd4U3w_mjs8NOot8U2bV0M8ZA&s',
     url: 'https://raw.githack.com/hazzatazza/3kh0-assets/fixy/tunnel-rush/index.html',
     isCustom: false
   },
@@ -66,7 +66,7 @@ const INITIAL_LIBRARY: Game[] = [
     id: 'tiny-fishing',
     title: 'Tiny Fishing',
     description: 'Catch rare fish and upgrade your equipment in this relaxing fishing simulator. How deep can you go?',
-    thumbnail: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=400&h=225&auto=format&fit=crop',
+    thumbnail: 'https://www.coolmathgames.com/sites/default/files/TinyFishing_OG-logo.jpg',
     url: 'https://raw.githack.com/hazzatazza/3kh0-assets/fixy/tiny-fishing/index.html',
     isCustom: false
   },
