@@ -71,6 +71,54 @@ const INITIAL_LIBRARY: Game[] = [
     isCustom: false
   },
   {
+    id: 'snow-rider-3d',
+    title: 'Snow Rider 3D',
+    description: 'Race down snowy mountains and collect gifts in this exhilarating 3D sledding game.',
+    thumbnail: 'https://images.unsplash.com/photo-1517176118179-65244ad0e59a?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/Snow-Rider3D/main/index.html',
+    isCustom: false
+  },
+  {
+    id: 'tap-tap-shots',
+    title: 'Tap Tap Shots',
+    description: 'Keep the ball moving and score as many baskets as you can in this addictive basketball game.',
+    thumbnail: 'https://images.unsplash.com/photo-1519861531473-9200362349c4?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://taptapshots.pages.dev/',
+    isCustom: false
+  },
+  {
+    id: 'stickman-hook',
+    title: 'Stickman Hook',
+    description: 'Swing, jump, and fly through levels as a ninja stickman in this physics-based arcade game.',
+    thumbnail: 'https://images.unsplash.com/photo-1550745165-9bc0b252728f?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/google-class/main/stickman-hook/index.html',
+    isCustom: false
+  },
+  {
+    id: 'drift-boss',
+    title: 'Drift Boss',
+    description: 'Master the art of drifting on tricky tracks. Stay on the road and timing is everything!',
+    thumbnail: 'https://images.unsplash.com/photo-1532581291347-9c39cf10a73c?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/ubg98/DriftBoss/gh-pages/index.html',
+    isCustom: false
+  },
+  {
+    id: 'dadish',
+    title: 'Dadish',
+    description: 'He’s a dad, and a radish. Rescue your kids from the kitchen in this charming platformer.',
+    thumbnail: 'https://images.unsplash.com/photo-1590233065611-3965942f7902?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/Graysinl/dadish/main/index.html',
+    isCustom: false
+  },
+  {
+    id: 'moto-x3m',
+    title: 'Moto X3M',
+    description: 'Perform insane stunts and race through dangerous obstacles in this ultimate bike racing game.',
+    thumbnail: 'https://images.unsplash.com/photo-1558981403-c5f91cbba527?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/gameshaxor/MotoX3M/master/index.html',
+    isCustom: false
+  },
+  {
     id: 'wordle',
     title: 'Wordle',
     description: 'Guess the hidden word in 6 tries. A daily logic and vocabulary challenge with infinite play mode.',
