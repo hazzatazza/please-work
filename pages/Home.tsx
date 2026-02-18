@@ -7,6 +7,70 @@ import { Game } from '../types';
 // Updated library with the latest requested games and thumbnails
 const INITIAL_LIBRARY: Game[] = [
   {
+    id: 'getting-over-it',
+    title: 'Getting Over It (Scratch)',
+    description: 'A challenging climb up a mountain of trash in a cauldron. Based on the viral hit, this Scratch version will test your patience and precision to the absolute limit.',
+    thumbnail: 'https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/TriangularDev/Getting-Over-It/main/index.html',
+    isCustom: false
+  },
+  {
+    id: 'smash-karts',
+    title: 'Smash Karts',
+    description: 'Fast-paced 3D multiplayer kart battle! Collect power-ups, blast your opponents, and dominate the arena in this action-packed racing game.',
+    thumbnail: 'https://images.unsplash.com/photo-1590333746438-d81ff15516b3?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/TheGreatMaximus98/smash-karts/main/index.html',
+    isCustom: false
+  },
+  {
+    id: 'paper-io-2',
+    title: 'Paper.io 2',
+    description: 'Capture as much territory as possible and become the king of the arena! Avoid hitting your own tail and outsmart your opponents.',
+    thumbnail: 'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/ubg17/PaperIO2/gh-pages/index.html',
+    isCustom: false
+  },
+  {
+    id: '2048',
+    title: '2048',
+    description: 'Join the numbers and get to the 2048 tile! A legendary addictive puzzle game where you slide tiles on a 4x4 grid to merge matching values.',
+    thumbnail: 'https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/ovolve/2048-AI/master/index.html',
+    isCustom: false
+  },
+  {
+    id: 'bowmasters',
+    title: 'Bowmasters',
+    description: 'A world-famous multiplayer game with bows and arrows. Aim, shoot, and defeat your opponents in this colorful physics-based action game!',
+    thumbnail: 'https://images.unsplash.com/photo-1580041065738-e72023758de1?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/THEUNBLOCKMAN/bowmasters/main/index.html',
+    isCustom: false
+  },
+  {
+    id: 'soccer-random',
+    title: 'Soccer Random',
+    description: 'Chaotic physics-based soccer! Score goals with unpredictable players and wacky conditions in this fun two-button game.',
+    thumbnail: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/Unblocked-Games-786/Soccer-Random/gh-pages/index.html',
+    isCustom: false
+  },
+  {
+    id: 'fruit-ninja',
+    title: 'Fruit Ninja',
+    description: 'Slice and dice your way to glory! Test your reflexes in this juicy arcade classic. Just watch out for the bombs!',
+    thumbnail: 'https://images.unsplash.com/photo-1550258114-68bb098a514d?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/genizy/UGS-Assets/main/fruit%20ninja/index.html',
+    isCustom: false
+  },
+  {
+    id: 'sling-drift',
+    title: 'Sling Drift',
+    description: 'Master the art of drifting in this minimalist high-score chaser. Hook onto points and swing through turns!',
+    thumbnail: 'https://images.unsplash.com/photo-1532581291347-9c39cf10a73c?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/ovo-gamez-unblocked/sling-drift/main/index.html',
+    isCustom: false
+  },
+  {
     id: 'subway-surfers',
     title: 'Subway Surfers',
     description: 'Dash as fast as you can! Dodge the oncoming trains and help Jake escape the grumpy Inspector.',
@@ -28,14 +92,6 @@ const INITIAL_LIBRARY: Game[] = [
     description: 'Classic block-building sandbox experience. Explore, build, and survive in Minecraft 1.12.2.',
     thumbnail: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=400&h=225&auto=format&fit=crop',
     url: 'https://raw.githack.com/XxFluffyAsherxX/Eaglercraft-1.12.2/main/Web/index.html',
-    isCustom: false
-  },
-  {
-    id: 'paper-io-2',
-    title: 'Paper IO 2',
-    description: 'Conquer as much territory as possible. Draw loops to capture land, but watch your tail!',
-    thumbnail: 'https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=400&h=225&auto=format&fit=crop',
-    url: 'https://raw.githack.com/ubg17/PaperIO2/gh-pages/index.html',
     isCustom: false
   },
   {
