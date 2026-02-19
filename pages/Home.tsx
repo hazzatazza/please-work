@@ -7,6 +7,46 @@ import { Game } from '../types';
 // Updated library with the latest requested games and thumbnails
 const INITIAL_LIBRARY: Game[] = [
   {
+    id: 'om-nom-run',
+    title: 'Om Nom Run',
+    description: 'Join Om Nom in a fast-paced running adventure! Dodge obstacles, collect coins, and unlock new characters in this colorful endless runner.',
+    thumbnail: 'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/youtube-playables/main/om-nom-run/index.html',
+    isCustom: false
+  },
+  {
+    id: 'amaze',
+    title: 'Amaze',
+    description: 'A satisfying and colorful puzzle game. Slide the paint ball to fill every corner of the maze with vibrant colors!',
+    thumbnail: 'https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/youtube-playables/main/amaze/index.html',
+    isCustom: false
+  },
+  {
+    id: 'going-balls',
+    title: 'Going Balls',
+    description: 'A fast-paced rolling ball platformer! Navigate through treacherous tracks, collect coins, and reach the finish line in this addictive skill game.',
+    thumbnail: 'https://images.unsplash.com/photo-1580234811497-9bd7fd0f56ef?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/youtube-playables/main/going-balls/index.html',
+    isCustom: false
+  },
+  {
+    id: 'happy-wheels',
+    title: 'Happy Wheels',
+    description: 'The ultimate physics-based vehicle game! Navigate through lethal obstacle courses with a variety of unique characters and vehicles. Expect the unexpected!',
+    thumbnail: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/ugs-singlefile/main/UGS-Files/clhappywheels.html',
+    isCustom: false
+  },
+  {
+    id: 'paper-io-2-skinless',
+    title: 'Paper.io 2 (skinless)',
+    description: 'A clean, high-performance version of the territory-capturing classic. Pure gameplay without any extra overhead.',
+    thumbnail: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/chocobananakun/paperio2/main/index.html',
+    isCustom: false
+  },
+  {
     id: 'getting-over-it',
     title: 'Getting Over It (Scratch)',
     description: 'A challenging climb up a mountain of trash in a cauldron. Based on the viral hit, this Scratch version will test your patience and precision to the absolute limit.',
@@ -163,7 +203,7 @@ const INITIAL_LIBRARY: Game[] = [
     title: 'Snow Rider 3D',
     description: 'Race down snowy mountains and collect gifts in this exhilarating 3D sledding game.',
     thumbnail: 'https://images.unsplash.com/photo-1517176118179-65244ad0e59a?q=80&w=400&h=225&auto=format&fit=crop',
-    url: 'https://raw.githack.com/hazzatazza/Snow-Rider3D/main/index.html',
+    url: 'https://raw.githack.com/Snow-Rider3D/main/index.html',
     isCustom: false
   },
   {
