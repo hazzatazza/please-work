@@ -92,7 +92,6 @@ const GameModal: React.FC<GameModalProps> = ({ game, onClose }) => {
               className="w-full h-full border-none"
               title={game.title}
               allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
             ></iframe>
           )}
         </div>

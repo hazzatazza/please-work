@@ -15,6 +15,14 @@ const INITIAL_LIBRARY: Game[] = [
     isCustom: false
   },
   {
+    id: 'movies-and-tv',
+    title: 'Movies and TV',
+    description: 'Watch your favorite movies and TV shows directly in your browser.',
+    thumbnail: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/harrys-school-project/main/index.html',
+    isCustom: false
+  },
+  {
     id: 'flappy-dunk',
     title: 'Flappy Dunk',
     description: 'A fun mashup of basketball and flapping! Tap to flap your basketball and guide it through as many hoops as possible. How high can you score?',
