@@ -7,11 +7,11 @@ import { Game } from '../types';
 // Updated library with the latest requested games and thumbnails
 const INITIAL_LIBRARY: Game[] = [
   {
-    id: 'movies-and-tv',
-    title: 'Movies and TV',
-    description: 'Watch your favorite movies and TV shows directly in your browser.',
-    thumbnail: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&h=225&auto=format&fit=crop',
-    url: 'https://raw.githack.com/hazzatazza/harrys-school-project/main/index.html',
+    id: 'friday-night-funkin',
+    title: 'Friday Night Funkin',
+    description: 'A rhythm-based music game where you compete in freestyle music battles. Press the arrow keys in time with the music to out-sing your opponents!',
+    thumbnail: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/genizy/ugs-files/main/clfridaynightfunkin.html',
     isCustom: false
   },
   {
