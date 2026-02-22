@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import GameCard from '../components/GameCard';
 import GameModal from '../components/GameModal';
-import CustomGameForm from '../components/CustomGameForm';
 import { Game } from '../types';
 
 // Updated library with the latest requested games and thumbnails
@@ -522,62 +521,18 @@ const INITIAL_LIBRARY: Game[] = [
 ];
 
 interface HomeProps {
-  customGames: Game[];
-  onAddGame: (game: Game) => void;
-  onDeleteGame: (id: string) => void;
-  onRestore: (games: Game[]) => void;
 }
 
-const Home: React.FC<HomeProps> = ({ customGames, onAddGame, onDeleteGame, onRestore }) => {
+const Home: React.FC<HomeProps> = () => {
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
-  const [showAddForm, setShowAddForm] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
-  const allGames = useMemo(() => {
-    return [...INITIAL_LIBRARY, ...customGames];
-  }, [customGames]);
-
   const filteredGames = useMemo(() => {
-    return allGames.filter(g => 
+    return INITIAL_LIBRARY.filter(g => 
       g.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       g.description.toLowerCase().includes(searchQuery.toLowerCase())
     );
-  }, [allGames, searchQuery]);
-
-  const handleDownloadBackup = () => {
-    const dataStr = JSON.stringify(customGames, null, 2);
-    const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-    
-    const exportFileDefaultName = 'algebra_practice_backup.json';
-    const linkElement = document.createElement('a');
-    linkElement.setAttribute('href', dataUri);
-    linkElement.setAttribute('download', exportFileDefaultName);
-    linkElement.click();
-  };
-
-  const handleUploadBackup = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const fileReader = new FileReader();
-    const files = event.target.files;
-    if (!files || files.length === 0) return;
-
-    fileReader.readAsText(files[0], "UTF-8");
-    fileReader.onload = (e) => {
-      try {
-        const content = e.target?.result;
-        if (typeof content === 'string') {
-          const games = JSON.parse(content);
-          if (Array.isArray(games)) {
-            onRestore(games);
-            alert(`Successfully restored ${games.length} games!`);
-          } else {
-            alert("Invalid backup file format.");
-          }
-        }
-      } catch (err) {
-        alert("Error reading file. Make sure it is a valid JSON backup.");
-      }
-    };
-  };
+  }, [searchQuery]);
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
@@ -588,38 +543,6 @@ const Home: React.FC<HomeProps> = ({ customGames, onAddGame, onDeleteGame, onRes
             Game Library
           </h2>
           <p className="text-slate-400">Your personal space for practice and entertainment.</p>
-        </div>
-        
-        <div className="flex flex-wrap gap-3">
-          <button 
-            onClick={() => setShowAddForm(true)}
-            className="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl font-bold flex items-center transition-all shadow-lg shadow-indigo-600/20"
-          >
-            <i className="fas fa-plus mr-2"></i> Add Game
-          </button>
-          
-          <div className="relative group">
-            <button className="bg-slate-800 hover:bg-slate-700 text-slate-300 px-5 py-2.5 rounded-xl font-bold flex items-center transition-all">
-              <i className="fas fa-save mr-2"></i> Backup
-            </button>
-            <div className="absolute right-0 top-full mt-2 hidden group-hover:block bg-slate-800 border border-slate-700 rounded-xl p-2 w-48 shadow-2xl z-10">
-              <button 
-                onClick={handleDownloadBackup}
-                className="w-full text-left p-2 hover:bg-indigo-600 hover:text-white rounded-lg transition-colors text-sm text-slate-300 mb-1"
-              >
-                <i className="fas fa-download mr-2"></i> Download JSON
-              </button>
-              <label className="w-full text-left p-2 hover:bg-indigo-600 hover:text-white rounded-lg transition-colors text-sm text-slate-300 cursor-pointer block">
-                <i className="fas fa-upload mr-2"></i> Upload Backup
-                <input 
-                  type="file" 
-                  className="hidden" 
-                  accept=".json"
-                  onChange={handleUploadBackup}
-                />
-              </label>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -645,7 +568,6 @@ const Home: React.FC<HomeProps> = ({ customGames, onAddGame, onDeleteGame, onRes
               key={game.id} 
               game={game} 
               onClick={setSelectedGame}
-              onDelete={game.isCustom ? onDeleteGame : undefined}
             />
           ))}
         </div>
@@ -655,7 +577,7 @@ const Home: React.FC<HomeProps> = ({ customGames, onAddGame, onDeleteGame, onRes
             <i className="fas fa-ghost"></i>
           </div>
           <h3 className="text-2xl font-bold text-slate-400 mb-2">No games found</h3>
-          <p className="text-slate-500">Try adjusting your search or add a new game.</p>
+          <p className="text-slate-500">Try adjusting your search.</p>
         </div>
       )}
 
@@ -664,13 +586,6 @@ const Home: React.FC<HomeProps> = ({ customGames, onAddGame, onDeleteGame, onRes
         <GameModal 
           game={selectedGame} 
           onClose={() => setSelectedGame(null)} 
-        />
-      )}
-
-      {showAddForm && (
-        <CustomGameForm 
-          onAdd={onAddGame}
-          onClose={() => setShowAddForm(false)}
         />
       )}
     </div>
