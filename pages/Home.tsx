@@ -15,12 +15,13 @@ const INITIAL_LIBRARY: Game[] = [
     isCustom: false
   },
   {
-    id: 'movies-and-tv',
-    title: 'Movies and TV',
-    description: 'Watch your favorite movies and TV shows directly in your browser.',
+    id: 'algebra-movies-tv',
+    title: 'Algebra Movies and TV',
+    description: 'An interactive algebra-themed experience. Explore mathematical concepts through a unique media-style interface.',
     thumbnail: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&h=225&auto=format&fit=crop',
     url: 'https://raw.githack.com/hazzatazza/harrys-school-project/main/index.html',
-    isCustom: false
+    isCustom: false,
+    noSandbox: true
   },
   {
     id: 'flappy-dunk',

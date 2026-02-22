@@ -7,6 +7,7 @@ export interface Game {
   embedCode?: string;
   url?: string;
   isCustom?: boolean;
+  noSandbox?: boolean;
 }
 
 export type StorageData = {

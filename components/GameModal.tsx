@@ -48,36 +48,45 @@ const GameModal: React.FC<GameModalProps> = ({ game, onClose }) => {
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 md:p-8 bg-slate-950/90 backdrop-blur-sm animate-in fade-in duration-300">
-      <div className="bg-slate-900 w-full max-w-6xl h-full max-h-[90vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-800">
-        {/* Modal Header */}
-        <div className="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-900/50">
-          <div className="flex items-center space-x-3">
-            <h2 className="text-xl font-bold text-white">{game.title}</h2>
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-0 md:p-0 bg-slate-950/90 backdrop-blur-sm animate-in fade-in duration-300">
+      <div className={`${game.noSandbox ? 'w-full h-full max-w-none max-h-none rounded-none border-none' : 'bg-slate-900 w-full max-w-6xl h-full max-h-[90vh] rounded-2xl shadow-2xl border border-slate-800'} flex flex-col overflow-hidden relative`}>
+        {/* Modal Header - Hidden for noSandbox */}
+        {!game.noSandbox ? (
+          <div className="p-4 border-b border-slate-800 flex justify-between items-center bg-slate-900/50">
+            <div className="flex items-center space-x-3">
+              <h2 className="text-xl font-bold text-white">{game.title}</h2>
+            </div>
+            <div className="flex items-center space-x-2">
+              <button 
+                onClick={openInNewTab}
+                className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all"
+                title="Open in Stealth Tab"
+              >
+                <i className="fas fa-external-link-alt"></i>
+              </button>
+              <button 
+                onClick={handleFullscreen}
+                className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all"
+                title="Fullscreen"
+              >
+                <i className="fas fa-expand"></i>
+              </button>
+              <button 
+                onClick={onClose}
+                className="p-2 text-slate-400 hover:text-red-500 hover:bg-slate-800 rounded-lg transition-all"
+              >
+                <i className="fas fa-times text-xl"></i>
+              </button>
+            </div>
           </div>
-          <div className="flex items-center space-x-2">
-            <button 
-              onClick={openInNewTab}
-              className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all"
-              title="Open in Stealth Tab"
-            >
-              <i className="fas fa-external-link-alt"></i>
-            </button>
-            <button 
-              onClick={handleFullscreen}
-              className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-all"
-              title="Fullscreen"
-            >
-              <i className="fas fa-expand"></i>
-            </button>
-            <button 
-              onClick={onClose}
-              className="p-2 text-slate-400 hover:text-red-500 hover:bg-slate-800 rounded-lg transition-all"
-            >
-              <i className="fas fa-times text-xl"></i>
-            </button>
-          </div>
-        </div>
+        ) : (
+          <button 
+            onClick={onClose}
+            className="absolute top-4 right-4 z-[70] p-3 bg-slate-900/80 hover:bg-slate-800 text-white rounded-full backdrop-blur-md transition-all border border-slate-700 shadow-xl"
+          >
+            <i className="fas fa-times text-xl"></i>
+          </button>
+        )}
 
         {/* Game Area */}
         <div ref={containerRef} className="flex-grow bg-black relative">
@@ -86,6 +95,12 @@ const GameModal: React.FC<GameModalProps> = ({ game, onClose }) => {
               className="w-full h-full flex items-center justify-center"
               dangerouslySetInnerHTML={{ __html: game.embedCode }}
             />
+          ) : game.noSandbox ? (
+            <iframe 
+              src={game.url} 
+              style={{ width: '100%', height: '100%', border: 'none' }}
+              title={game.title}
+            ></iframe>
           ) : (
             <iframe 
               src={game.url} 
@@ -97,13 +112,15 @@ const GameModal: React.FC<GameModalProps> = ({ game, onClose }) => {
           )}
         </div>
 
-        {/* Info Area */}
-        <div className="p-6 bg-slate-900/80">
-          <h3 className="text-slate-200 font-semibold mb-2">Description</h3>
-          <p className="text-slate-400 text-sm leading-relaxed max-w-3xl">
-            {game.description}
-          </p>
-        </div>
+        {/* Info Area - Hidden for noSandbox */}
+        {!game.noSandbox && (
+          <div className="p-6 bg-slate-900/80">
+            <h3 className="text-slate-200 font-semibold mb-2">Description</h3>
+            <p className="text-slate-400 text-sm leading-relaxed max-w-3xl">
+              {game.description}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

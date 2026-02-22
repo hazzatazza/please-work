@@ -3,21 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import GameModal from './components/GameModal';
 import { Game } from './types';
-
-const MOVIES_GAME: Game = {
-  id: 'movies-and-tv',
-  title: 'Movies and TV',
-  description: 'Watch your favorite movies and TV shows directly in your browser.',
-  thumbnail: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400&h=225&auto=format&fit=crop',
-  url: 'https://raw.githack.com/hazzatazza/harrys-school-project/main/index.html',
-  isCustom: false
-};
 
 const App: React.FC = () => {
   const [customGames, setCustomGames] = useState<Game[]>([]);
-  const [showMovies, setShowMovies] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem('algebra_practice_custom_games');
@@ -63,12 +52,6 @@ const App: React.FC = () => {
             </Link>
             <nav className="flex items-center space-x-6">
               <Link to="/" className="text-slate-300 hover:text-white transition-colors">Library</Link>
-              <button 
-                onClick={() => setShowMovies(true)}
-                className="text-slate-300 hover:text-white transition-colors cursor-pointer"
-              >
-                Movies
-              </button>
               <Link to="/about" className="text-slate-300 hover:text-white transition-colors">Info</Link>
             </nav>
           </div>
@@ -91,13 +74,6 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
-
-        {showMovies && (
-          <GameModal 
-            game={MOVIES_GAME} 
-            onClose={() => setShowMovies(false)} 
-          />
-        )}
 
         {/* Footer */}
         <footer className="bg-slate-900 border-t border-slate-800 py-8 px-6">
