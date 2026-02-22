@@ -1,8 +1,5 @@
 {
   "name": "Algebra Practice",
   "description": "A sleek, modern gaming site for browser-based games with custom embed support and stealth features.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
+  "requestFramePermissions": []
 }
