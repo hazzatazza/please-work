@@ -79,6 +79,14 @@ const INITIAL_LIBRARY: Game[] = [
     isCustom: false
   },
   {
+    id: 'getting-over-it-full',
+    title: 'Getting Over It with Bennett Foddy',
+    description: 'The full web-port of the infamous climbing game. A game I made for a certain kind of person. To hurt them.',
+    thumbnail: 'https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/genizy/web-port/main/getting-over-it/index.html',
+    isCustom: false
+  },
+  {
     id: 'smash-karts',
     title: 'Smash Karts',
     description: 'Fast-paced 3D multiplayer kart battle! Collect power-ups, blast your opponents, and dominate the arena in this action-packed racing game.',
@@ -211,7 +219,7 @@ const INITIAL_LIBRARY: Game[] = [
     title: 'Tunnel Rush',
     description: 'Test your reflexes in this fast-paced 3D tunnel runner. Speed through obstacles and stay focused!',
     thumbnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13q6aHn1f3Dd4U3w_mjs8NOot8U2bV0M8ZA&s',
-    url: 'https://raw.githack.com/hazzatazza/3kh0-assets/fixy/tunnel-rush/index.html',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/tunnelrush.html',
     isCustom: false
   },
   {
@@ -311,11 +319,27 @@ const INITIAL_LIBRARY: Game[] = [
     isCustom: false
   },
   {
+    id: 'short-ride',
+    title: 'Short Ride',
+    description: 'Avoid deadly traps and navigate through dangerous levels in this physics-based survival game. Can you make it to the end in one piece?',
+    thumbnail: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/hazzatazza/short-ridegood/main/index.html',
+    isCustom: false
+  },
+  {
     id: 'poly-track',
     title: 'Poly Track',
     description: 'Race against the clock on low-poly tracks. Speed and precision are key.',
     thumbnail: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=400&h=225&auto=format&fit=crop',
     url: 'https://polytrack-3.pages.dev/',
+    isCustom: false
+  },
+  {
+    id: 'poly-track-52',
+    title: 'Poly Track .5.2',
+    description: 'Race against the clock on low-poly tracks. Speed and precision are key. Version .5.2 with new features.',
+    thumbnail: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/polytrack.html',
     isCustom: false
   },
   {
@@ -380,6 +404,118 @@ const INITIAL_LIBRARY: Game[] = [
     description: 'Control a ball as it speeds down a steep slope. Avoid obstacles and don\'t fall off!',
     thumbnail: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400&h=225&auto=format&fit=crop',
     url: 'https://sl0pe.pages.dev/',
+    isCustom: false
+  },
+  {
+    id: 'block-blast',
+    title: 'Block Blast',
+    description: 'A colorful and addictive block puzzle game. Match blocks to clear lines and reach high scores!',
+    thumbnail: 'https://images.unsplash.com/photo-1550745165-9bc0b252728f?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/reunbozdo/BlockBlast/main/index.html',
+    isCustom: false
+  },
+  {
+    id: 'boxing-random',
+    title: 'Boxing Random',
+    description: 'Wacky physics-based boxing! Fight with unpredictable movements and try to knock out your opponent.',
+    thumbnail: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/Unblocked-Games-786/Boxing-Random/gh-pages/index.html',
+    isCustom: false
+  },
+  {
+    id: 'candy-crush',
+    title: 'Candy Crush',
+    description: 'The legendary match-3 puzzle game. Swap and match candies to progress through hundreds of levels!',
+    thumbnail: 'https://images.unsplash.com/photo-1581798459219-318e76aecc7b?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/candycrush.html',
+    isCustom: false
+  },
+  {
+    id: 'among-us',
+    title: 'Among Us',
+    description: 'Play Among Us directly in your browser! Find the impostor or complete your tasks to win.',
+    thumbnail: 'https://images.unsplash.com/photo-1614728263952-84ea206f99b6?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/amongus.html',
+    isCustom: false
+  },
+  {
+    id: 'angry-birds',
+    title: 'Angry Birds',
+    description: 'The classic bird-slinging game. Use unique powers to destroy the greedy pigs\' defenses!',
+    thumbnail: 'https://images.unsplash.com/photo-1559715541-5daf8a0296d0?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/angrybirds.html',
+    isCustom: false
+  },
+  {
+    id: 'cut-the-rope',
+    title: 'Cut the Rope',
+    description: 'Feed Om Nom with candy! Cut the ropes and use physics to guide the treat into his mouth.',
+    thumbnail: 'https://images.unsplash.com/photo-1551103782-8ab07afd45c1?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/cuttherope.html',
+    isCustom: false
+  },
+  {
+    id: 'google-dino',
+    title: 'Google Dinosaur Game',
+    description: 'The famous "No Internet" dinosaur game. Jump over cacti and dodge pterodactyls!',
+    thumbnail: 'https://images.unsplash.com/photo-1525824236856-8d0431def3ab?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/googledino.html',
+    isCustom: false
+  },
+  {
+    id: 'helix-jump',
+    title: 'Helix Jump',
+    description: 'Guide a bouncing ball through a rotating helix tower. Don\'t hit the wrong colored platforms!',
+    thumbnail: 'https://images.unsplash.com/photo-1558403194-611308249627?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/helixjump.html',
+    isCustom: false
+  },
+  {
+    id: 'retro-bowl',
+    title: 'Retro Bowl',
+    description: 'The perfect game for the armchair quarterback. Manage your team and lead them to glory!',
+    thumbnail: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/retrobowl.html',
+    isCustom: false
+  },
+  {
+    id: 'stickman-archers',
+    title: 'Stickman Archers Battle',
+    description: 'Engage in epic archery duels! Aim carefully and defeat your enemies in this stickman battle.',
+    thumbnail: 'https://images.unsplash.com/photo-1580041065738-e72023758de1?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/stickarchersbattle.html',
+    isCustom: false
+  },
+  {
+    id: 'draw-climber',
+    title: 'Draw Climber',
+    description: 'Draw legs for your cube to help it climb through challenging obstacle courses.',
+    thumbnail: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/drawclimber.html',
+    isCustom: false
+  },
+  {
+    id: 'fnaf',
+    title: 'Five Nights at Freddy\'s',
+    description: 'Can you survive five nights as a security guard at Freddy Fazbear\'s Pizza?',
+    thumbnail: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/shayderrr/Offline-HTML-Games-Pack/master/offline/fnaf.html',
+    isCustom: false
+  },
+  {
+    id: 'duck-life',
+    title: 'Duck Life',
+    description: 'Train your duck to become a world champion! Compete in running, swimming, and flying races in this classic training simulator.',
+    thumbnail: 'https://images.unsplash.com/photo-1555854816-802f188090e4?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/MDtowerz/duck-life-1/main/unity/index.html',
+    isCustom: false
+  },
+  {
+    id: 'duck-life-2',
+    title: 'Duck Life 2',
+    description: 'The adventure continues! Train your duck in new skills like climbing and compete in even more challenging world championships.',
+    thumbnail: 'https://images.unsplash.com/photo-1555854816-802f188090e4?q=80&w=400&h=225&auto=format&fit=crop',
+    url: 'https://raw.githack.com/BonziWorld1/DuckLife2/main/index.html',
     isCustom: false
   }
 ];
