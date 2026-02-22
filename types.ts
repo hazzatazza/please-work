@@ -9,7 +9,3 @@ export interface Game {
   isCustom?: boolean;
   noSandbox?: boolean;
 }
-
-export type StorageData = {
-  customGames: Game[];
-};

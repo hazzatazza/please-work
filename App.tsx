@@ -1,37 +1,11 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import { Game } from './types';
 
 const App: React.FC = () => {
-  const [customGames, setCustomGames] = useState<Game[]>([]);
-
-  useEffect(() => {
-    const saved = localStorage.getItem('algebra_practice_custom_games');
-    if (saved) {
-      try {
-        setCustomGames(JSON.parse(saved));
-      } catch (e) {
-        console.error("Failed to parse saved games", e);
-      }
-    }
-  }, []);
-
-  const saveGames = (games: Game[]) => {
-    setCustomGames(games);
-    localStorage.setItem('algebra_practice_custom_games', JSON.stringify(games));
-  };
-
-  const addGame = (game: Game) => {
-    saveGames([...customGames, game]);
-  };
-
-  const deleteGame = (id: string) => {
-    saveGames(customGames.filter(g => g.id !== id));
-  };
-
   return (
     <HashRouter>
       <div className="min-h-screen flex flex-col">
@@ -62,14 +36,7 @@ const App: React.FC = () => {
           <Routes>
             <Route 
               path="/" 
-              element={
-                <Home 
-                  customGames={customGames} 
-                  onAddGame={addGame} 
-                  onDeleteGame={deleteGame} 
-                  onRestore={(games) => saveGames(games)}
-                />
-              } 
+              element={<Home />} 
             />
             <Route path="/about" element={<About />} />
           </Routes>
